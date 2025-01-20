@@ -2,7 +2,7 @@
 # Python Data Processing and Array Manipulation  
 
 ## Participant Names  
-- **Participant 1:** [Name of Student 1]  
+- **Participant 1:** Eddy Gasana  
 - **Participant 2:** [Name of Student 2]  
 
 ## Description  
