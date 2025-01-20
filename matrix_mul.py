@@ -17,8 +17,8 @@ Ans = []
 for i in range(len(Prices)):
     row_sum = 0
     for j in range(len(Prices[0])):
-        # COMPLETE THE MISSING LOGIC HERE
-        pass
+        index_prod = Prices[i][j] * Array2[j]
+        row_sum = row_sum + index_prod
 
 
 print(Ans)
