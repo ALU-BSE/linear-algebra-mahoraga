@@ -1,24 +1,29 @@
 import pandas as pd
-import numpy as np
 
-# Load data
-data = pd.read_csv('path/to/data')
 
-# Example arrays
+
 Prices = [[300, 500],
           [1000, 120.85]]
 
 Array2 = [200, 100]
 
-# Calculate the result
-Ans = []
-# (300*200 + 500*100) as an example calculation
 
+print(Prices[0][0])
+print(Prices[0][1])
+print(Prices[1][0])
+print(Prices[1][1])  
+
+# Initialize an empty list to store the results
+Ans = []
+
+# Calculate the sum of products for each row
+# (200 * 300 + 100 * 500) as an example calculation
 for i in range(len(Prices)):
     row_sum = 0
     for j in range(len(Prices[0])):
-        index_prod = Prices[i][j] * Array2[j]
-        row_sum = row_sum + index_prod
+        index_prod = Prices[i][j] * Array2[j]  # Multiply corresponding elements
+        row_sum += index_prod  # Add to the row sum
+    Ans.append(row_sum)  # Append the row sum to the results list
 
-
+# Print the resulting sums
 print(Ans)
